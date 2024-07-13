@@ -9,6 +9,12 @@ body{
 html{
     scroll-behavior: smooth;
 }
+*{
+    box-sizing: border-box;
+}
+h2{
+    margin:0;
+}
 .nav-links ul{
     list-style: none;
     margin:0;
@@ -32,12 +38,14 @@ a:hover{
 }
 .logo{
     font-size: 2.35rem;
+    font-weight: 200;
     cursor: default;
 }
 .navbar{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: 200;
 }
 .togglebtn{
     display:none;
@@ -52,6 +60,90 @@ a:hover{
     width:100%;
     background-color: grey;
     border-radius: 0.5rem;
+}
+section{
+    padding-top: 4vh;
+    height:96vh;
+    min-height:fit-content;
+    margin:0 10rem;
+}
+#profile{
+    display:flex;
+    height:80vh;
+    justify-content:center;
+    gap:7rem;
+    margin:5vh;
+}
+.pic-container{
+    display:flex;
+    height:400px;
+    width:400px;
+}
+.section-text{
+    display: flex;
+    height:50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.section-text p,h1{
+    margin:0;
+}
+.section-text p{
+    font-size: 1.2rem;
+    font-weight:200;
+}
+.socials-container{
+    display: flex;
+    gap:.3rem;
+    height: 40px;
+    width: 80px;
+}
+.btn{
+    background-color: white;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: lighter;
+    border-radius: 10rem;
+    padding:0.5em 1em;
+    border:1px solid grey;
+    outline:none;
+}
+.btn:hover{
+    box-shadow: 0 0 5px 0 grey;
+    cursor: pointer;
+}
+.btn.contact-btn{
+    background-color: rgb(49, 49, 49);
+    color:white;
+}
+.about-img-container{
+    display:flex;
+    height:300px;
+    width:300px;
+}
+.about-img-container img{
+    border-radius: 2.5rem;
+}
+.about-title{
+    font-size: xx-large;
+}
+.about-title h1,p{
+    margin:0;
+    text-align: center;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-main{
+    display:flex;
+    gap:1rem;
+    border:1px solid black;
+    border-radius: 3rem;
+    padding:2rem;
 }
 @media (max-width: 900px) {
     .togglebtn{
