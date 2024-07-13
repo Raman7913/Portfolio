@@ -9,7 +9,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.nav-links{
+.nav-links ul{
     list-style: none;
     margin:0;
     padding:0;
@@ -17,14 +17,17 @@ html{
     gap:1.5rem;
     font-size: 1.5rem;
 }
+.nav-links ul li{
+    padding:1rem 0;
+}
 li a{
     text-decoration: none;
     color:black;
 }
 a:hover{
     text-decoration:underline;
-    text-decoration-color: red;
     text-underline-offset: 1rem;
+    text-decoration-color: grey;
     color:grey;
 }
 .logo{
@@ -35,5 +38,46 @@ a:hover{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    height:10vh;
+}
+.togglebtn{
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    width: 30px;
+    gap:2px;
+}
+
+.togglebtn .bar{
+    height:2px;
+    width:100%;
+    background-color: grey;
+    border-radius: 0.5rem;
+}
+@media (max-width: 900px) {
+    .togglebtn{
+        display: flex;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links ul{
+        display: none;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .nav-mobile{
+        display:flex;
+        width:90%;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .nav-links ul li{
+        padding:0;
+    }
+    .nav-links.active ul{
+        display:flex;
+    }
 }
