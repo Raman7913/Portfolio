@@ -26,11 +26,11 @@ h2{
 .nav-links ul li{
     padding:1rem 0;
 }
-li a{
+a{
     text-decoration: none;
     color:black;
 }
-a:hover{
+.navbar a:hover{
     text-decoration:underline;
     text-underline-offset: 1rem;
     text-decoration-color: grey;
@@ -62,17 +62,15 @@ a:hover{
     border-radius: 0.5rem;
 }
 section{
-    padding-top: 4vh;
-    height:96vh;
     min-height:fit-content;
     margin:0 10rem;
 }
 #profile{
     display:flex;
-    height:80vh;
     justify-content:center;
     gap:7rem;
-    margin:5vh;
+    margin:5rem;
+    flex-wrap: wrap;
 }
 .pic-container{
     display:flex;
@@ -81,7 +79,6 @@ section{
 }
 .section-text{
     display: flex;
-    height:50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -137,6 +134,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
 }
 .about-main{
     display:flex;
@@ -144,6 +142,70 @@ section{
     border:1px solid black;
     border-radius: 3rem;
     padding:2rem;
+    flex-wrap: wrap;
+}
+.btn{
+    background-color: grey;
+    color:white;
+}
+.image-container{
+    display: flex;
+    height:10rem;
+    width:15rem;
+}
+.project-container{
+    margin:1.2rem;
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project-container > div{
+    border:1px solid black;
+    padding:1.5rem;
+    border-radius: 1.5rem;
+}
+.project-container h1{
+    text-align: center;
+}
+.button-container{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top: .3rem;
+}
+.github-btn{
+    background-color: white;
+    color:black;
+    padding: 0.5em 1em;
+}
+.demo-btn{
+    background-color: black;
+    padding: 0.5em 1em;
+
+}
+#project{
+    margin-top: 10rem;
+    padding-top: 5rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 100000px;
+    margin-top: 0.5rem;
+    width:450px;
+}
+.contact-container{
+    display:flex;
+    justify-content: center;
+}
+#contact{
+    margin: 10rem 0;
+    padding:4rem;
 }
 @media (max-width: 900px) {
     .togglebtn{
