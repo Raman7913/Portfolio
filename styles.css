@@ -97,6 +97,9 @@ section{
     height: 40px;
     width: 80px;
 }
+.socials-container img{
+    cursor: pointer;
+}
 .btn{
     background-color: white;
     font-style: italic;
@@ -111,7 +114,7 @@ section{
     box-shadow: 0 0 5px 0 grey;
     cursor: pointer;
 }
-.btn.contact-btn{
+.btn.contact-btn,.contact-in-btn{
     background-color: rgb(49, 49, 49);
     color:white;
 }
